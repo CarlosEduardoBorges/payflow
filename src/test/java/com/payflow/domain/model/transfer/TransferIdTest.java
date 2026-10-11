@@ -1,12 +1,11 @@
 package com.payflow.domain.model.transfer;
 
-import com.payflow.domain.exception.InvalidTransferIdException;
-import org.junit.jupiter.api.Test;
-
-import java.util.UUID;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import com.payflow.domain.exception.InvalidTransferIdException;
+import java.util.UUID;
+import org.junit.jupiter.api.Test;
 
 class TransferIdTest {
 
@@ -22,5 +21,4 @@ class TransferIdTest {
     void shouldRejectNull() {
         assertThrows(InvalidTransferIdException.class, () -> new TransferId(null));
     }
-
 }

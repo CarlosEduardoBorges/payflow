@@ -1,7 +1,6 @@
 package com.payflow.domain.model.transfer;
 
 import com.payflow.domain.exception.InvalidTransferIdException;
-
 import java.util.UUID;
 
 public record TransferId(UUID value) {

@@ -1,18 +1,17 @@
 package com.payflow.domain.model.user;
 
 import com.payflow.domain.exception.InvalidEmailException;
-
 import java.util.Locale;
 import java.util.regex.Pattern;
 
 /**
- * Value Object que representa o endereço eletrónico de um usuário.
- * É normalizado (trim + minúsculas) e validado na criação,
- * então toda a instância existente é válida e imutável.
+ * Value Object que representa o endereço eletrónico de um usuário. É normalizado (trim +
+ * minúsculas) e validado na criação, então toda a instância existente é válida e imutável.
  */
 public record Email(String value) {
 
-    private static final String INVALID_MESSAGE = "Email must be a valid address, e.g. name@domain.com";
+    private static final String INVALID_MESSAGE =
+            "Email must be a valid address, e.g. name@domain.com";
 
     /** Formato esperado: parte local, "@", domínio e TLD com 2+ letras. */
     private static final Pattern EMAIL_PATTERN =

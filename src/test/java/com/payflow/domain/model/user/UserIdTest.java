@@ -1,12 +1,11 @@
 package com.payflow.domain.model.user;
 
-import com.payflow.domain.exception.InvalidUserIdException;
-import org.junit.jupiter.api.Test;
-
-import java.util.UUID;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import com.payflow.domain.exception.InvalidUserIdException;
+import java.util.UUID;
+import org.junit.jupiter.api.Test;
 
 class UserIdTest {
 
@@ -20,6 +19,6 @@ class UserIdTest {
 
     @Test
     void shouldRejectNull() {
-        assertThrows(InvalidUserIdException.class, () -> new UserId(null) );
+        assertThrows(InvalidUserIdException.class, () -> new UserId(null));
     }
 }
