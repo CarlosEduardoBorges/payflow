@@ -6,9 +6,9 @@ import java.util.Locale;
 import java.util.regex.Pattern;
 
 /**
- * Value Object que representa o e-mail de um usuário.
+ * Value Object que representa o endereço eletrónico de um usuário.
  * É normalizado (trim + minúsculas) e validado na criação,
- * então toda instância existente é válida e imutável.
+ * então toda a instância existente é válida e imutável.
  */
 public record Email(String value) {
 
