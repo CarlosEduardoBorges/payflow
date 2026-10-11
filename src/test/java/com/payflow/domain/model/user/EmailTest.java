@@ -1,13 +1,13 @@
 package com.payflow.domain.model.user;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import com.payflow.domain.exception.InvalidEmailException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class EmailTest {
 
@@ -38,5 +38,4 @@ class EmailTest {
     void shouldRejectInvalidEmail(String input) {
         assertThrows(InvalidEmailException.class, () -> new Email(input));
     }
-
 }

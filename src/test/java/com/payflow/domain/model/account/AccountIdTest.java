@@ -1,12 +1,11 @@
 package com.payflow.domain.model.account;
 
-import com.payflow.domain.exception.InvalidAccountIdException;
-import org.junit.jupiter.api.Test;
-
-import java.util.UUID;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import com.payflow.domain.exception.InvalidAccountIdException;
+import java.util.UUID;
+import org.junit.jupiter.api.Test;
 
 class AccountIdTest {
 
